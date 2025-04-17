@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Lstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="emailPhone">Email or Phone Number:</label>
+            <input type="text" id="emailPhone" name="emailPhone" placeholder="Enter your email or phone number" required>
+
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="show-hide" onclick="togglePassword()">Show</span>
+            </div>
+            <p>Don't have an account? <a href="sign-in.html">Sign Up</a></p>
+            
+            <button type="submit">Login</button>
+            <p id="error" class="error"></p>
+        </form>
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="login clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="Lscript.js"></script>
+</body>
+</html>
+
+   
+
+    

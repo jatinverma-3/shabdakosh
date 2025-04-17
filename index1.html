@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOP Generator</title>
+    <link rel="stylesheet" href="1styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SOP Generator</h1>
+        <form id="sopForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" required>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" required>
+
+            <label for="background">Educational Background:</label>
+            <textarea id="background" rows="4" required></textarea>
+
+            <label for="goals">Career Goals:</label>
+            <textarea id="goals" rows="4" required></textarea>
+
+            <label for="strengths">What makes you an Exceptional Candidate:</label>
+            <textarea id="strengths" rows="3" required></textarea>
+
+            <button type="button" id="toggleButton" onclick="toggleAdditionalInfo()">Add Additional Information</button>
+
+            <div id="additionalInfo" style="display: none;">
+                <label for="anecdote">Personal Anecdotes:</label>
+                <textarea id="anecdote" rows="3"></textarea>
+
+                <label for="skills">Skills and Competencies:</label>
+                <textarea id="skills" rows="3"></textarea>
+
+                <label for="challenges">Challenges and Resilience:</label>
+                <textarea id="challenges" rows="3"></textarea>
+            </div>
+
+            <button type="button" onclick="generateSOP()">Generate SOP</button>
+        </form>
+    </div>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="sop clip.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script src="1script.js"></script>
+</body>
+</html>

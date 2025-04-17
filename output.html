@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated SOP</title>
+    <link rel="stylesheet" href="1styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Statement of Purpose</h1>
+        <div id="sopOutput" class="sop-output">
+            <!-- Generated SOP will appear here -->
+        </div>
+        <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="sop clip.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="output_script.js"></script>
+</body>
+</html>
